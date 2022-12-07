@@ -663,6 +663,10 @@ section .card .image img{
   padding-top: 1rem;
 }
 
+.link__pagina{
+  color: #04b916;
+}
+
 .work__filters{
   display: flex;
   justify-content: center;
