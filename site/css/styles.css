@@ -28,36 +28,37 @@
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --title-color:  hsl(var(--second-hue), 15%, 15%);
+  --text-color:  hsl(var(--second-hue), 8%, 35%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
-  --red-color: #BB160A;
-  --black-color: #000;
-  --white-color: #fff;
+  --red-color: #04b916;
+  --black-color: #fff;
+  --white-color: #000;
   --caixa-color: #0e0e0e;
-  --cor-cabecalho: #fff;
-  --icon-background: #0e0e0e;
+  --cor-cabecalho: #000;
+  --icon-background: #fff;
   --footer-color: #131313;
-  --button-main-color: #DB190C;
+  --button-main-color: #04b916;
   --sun-color: #F6DD00;
   --background-color-blue: #3AE8FF;
-  --check-icon: #561562;
-  --button-hover: #DB190C;
-  --red-color-border: #BB160A;
+  --check-icon: #009e0f;
+  --button-hover: #009e0f;
+  --red-color-border: #009e0f;
   --box-shawdow: #000;
-  --moon-color: #BB160A;
-  --skills-name-color: #fff;
-  --skills-box-color: #0e0e0e;
-  --title-red-color: #DB190C;
-  --contact-button: #DB190C;
-  --home-social: #BB160A;
-  --services-button: #BB160A;
-  --services__modal-title: #BB160A;
-  --caixa-color-2: #0e0e0e;
+  --moon-color: #04b916;
+  --skills-name-color: #0e0e0e;
+  --skills-box-color: #fff;
+  --title-red-color: #000;
+  --contact-button: #04b916;
+  --home-social: #04b916;
+  --services-button: #04b916;
+  --services__modal-title: #000;
+  --caixa-color-2: #fff;
   --caixa-color-3: #0e0e0e;
-  --services-title: #fff;
+  --services-title: #0e0e0e;
+  --icon-white: #009e0f;
 
 
   /*========== Font and typography ==========*/
@@ -155,28 +156,28 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.light-theme{
-  --title-color: hsl(var(--second-hue), 15%, 15%);
-  --text-color: hsl(var(--second-hue), 8%, 35%);
-  --black-color: #fff;
-  --white-color: #000;
-  --button-main-color: #04b916;
-  --button-hover: #04b916;
-  --red-color-border: #04b916;
+  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --text-color: hsl(var(--second-hue), 8%, 75%);;
+  --black-color: #000;
+  --white-color: #fff;
+  --button-main-color: #BB160A;
+  --button-hover: #DB190C;
+  --red-color-border: #BB160A;
   --moon-color: var(--sun-color);
-  --skills-name-color: #000;
-  --skills-box-color: #fff;
-  --check-icon: #009e0f;
-  --title-red-color: #000;
-  --contact-button: #04b916;
+  --skills-name-color: #fff;
+  --skills-box-color: #0e0e0e;
+  --check-icon: #561562;
+  --title-red-color: #fff;
+  --contact-button: #BB160A;
   --cor-cabecalho: #000;
-  --icon-background: #fff;
-  --icon-white: #009e0f;
+  --icon-background: #0e0e0e;
+  --icon-white: #BB160A;
   --home-social: #000;
-  --services-button: #009e0f;
-  --services-title: rgb(22, 22, 22);
-  --services__modal-title: #000;
-  --caixa-color-2: #fff;
-  --caixa-color-3: #000;
+  --services-button: #BB160A;
+  --services-title: #fff;
+  --services__modal-title: #fff;
+  --caixa-color-2: #0e0e0e;
+  --caixa-color-3: #0e0e0e;
 }
 
 /*========== 
@@ -260,7 +261,7 @@ body.light-theme{
 .nav__menu{
   position: fixed;
   bottom: 1rem;
-  background-color: 	#000000 32%, 16%, .8;
+  background-color: 	#000 32%, 16%, .8;
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
@@ -274,7 +275,7 @@ body.light-theme{
 }
 
 .nav__link{
-  color: var(--text-color);
+  color: #000;
   font-size: 1.25rem;
   padding: .4rem;
   display: flex;
@@ -285,7 +286,7 @@ body.light-theme{
 .active-link{
   background: linear-gradient(180deg, 
   var(--button-main-color) 32% 16% .8,
-  #000000;
+  #000;
             );
   box-shadow: 0 0 20px var(--button-main-color);
   color: var(--title-color);
@@ -376,6 +377,7 @@ section .card .image img{
 .home__social-link{
   width: max-content;
   background-color: var(--icon-background);
+  box-shadow: 0 0 5px var(--box-shawdow);
   color: var(--icon-white);
   padding: .25rem;
   border-radius: .25rem;
@@ -664,7 +666,7 @@ section .card .image img{
 }
 
 .link__pagina{
-  color: #04b916;
+  color: var(--button-main-color);
 }
 
 .work__filters{
@@ -1293,4 +1295,8 @@ section .card .image img{
     padding: .4rem;
     border-radius: .5rem;
   }
+}
+
+.separar__espaco{
+  margin-top: 5rem;
 }
